@@ -1,3 +1,3 @@
-def call(string image_name) {
+def call(String image_name) {
     sh "docker build -t ${image_name}:${env.BUILD_NUMBER} ."
 }
